@@ -23,18 +23,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
-
-      - name: Grant Execute Permission to Gradlew
+      - name: Setup Gradle 8.4 Wrapper
         run: |
-          if [ ! -f gradlew ]; then
-            gradle wrapper
-          fi
+          gradle wrapper --gradle-version 8.4
           chmod +x gradlew
 
       - name: Build Android Release APK
-        run: ./gradlew assembleRelease --no-daemon --stacktrace
+        run: ./gradlew assembleRelease --no-daemon
 
       - name: Prepare APK for Release
         run: |
@@ -63,7 +58,7 @@ jobs:
             - **Always-on Background Service:** Stays active over WhatsApp, Instagram, Telegram, etc.
             - **Draggable & Docking:** Smooth touch dragging that docks to screen edges.
 
-            #### 📲 Download Link:
+            #### 📲 Direct Download Link:
             Download **`QuickFlow.apk`** below directly to your Android device.
 
             #### 🔧 1-Step Setup:
