@@ -30,16 +30,11 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Flutter Create Platform Files
-        run: |
-          # Ensure Flutter platform files exist while retaining custom Kotlin code and layouts
-          flutter create --platforms=android --org com.snaphack --project-name quickflow .
-
       - name: Install Flutter Dependencies
         run: flutter pub get
 
       - name: Build Android Release APK
-        run: flutter build apk --release --no-shrink
+        run: flutter build apk --release
 
       - name: Prepare APK for Release
         run: |
