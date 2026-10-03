@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickFlow</string>
+    <string name="accessibility_service_description">Enables QuickFlow floating bubble and allows direct 1-tap text injection into chat fields without manual copying and pasting.</string>
+</resources>
