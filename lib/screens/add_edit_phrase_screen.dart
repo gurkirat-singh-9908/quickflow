@@ -201,7 +201,7 @@ class _AddEditPhraseScreenState extends State<AddEditPhraseScreen> {
                   ),
                   const SizedBox(width: 8),
                   IconButton.filled(
-                    style: IconButton.filled(
+                    style: IconButton.styleFrom(
                       backgroundColor: const Color(0xFF6366F1),
                     ),
                     icon: const Icon(Icons.add, color: Colors.white),

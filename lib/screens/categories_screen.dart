@@ -83,11 +83,11 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 const SizedBox(height: 6),
                 Wrap(
                   spacing: 8,
-                  children: _colorPalette.map((col) {
+                  children: _colorPalette.map<Widget>((col) {
                     final isSel = selectedColor == col;
                     return InkWell(
                       onTap: () => setDialogState(() => selectedColor = col),
-                      shape: const CircleBorder(),
+                      customBorder: const CircleBorder(),
                       child: Container(
                         width: 28,
                         height: 28,
