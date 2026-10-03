@@ -10,8 +10,8 @@
     <application
         android:label="QuickFlow"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher"
+        android:icon="@drawable/bubble_bg"
+        android:roundIcon="@drawable/bubble_bg"
         android:allowBackup="true"
         android:theme="@style/LaunchTheme">
 
